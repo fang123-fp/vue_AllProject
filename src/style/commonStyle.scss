@@ -1,0 +1,39 @@
+$blue: #3190e8;  
+$bc: #e4e4e4;
+$fc:#fff;
+
+
+//宽高
+@mixin wh($width, $height){
+	width: $width;
+  height: $height;
+  
+}
+//flex 布局和 子元素 对其方式
+@mixin fj($type: center){
+	display: flex;
+  align-items: $type;
+}
+//字体大小，颜色
+@mixin sc($size, $color){
+	font-size: $size;
+	color: $color;
+}
+//定位上下居中
+@mixin ct {  
+	position: absolute;
+	top: 50%;
+  transform: translateY(-50%);
+}
+// 
+@mixin commShopStyle{
+    width: 170px;
+    height: inherit;
+    text-align: center;
+}
+
+@mixin commShopSize($size,$color,$padding){
+    font-size:$size;
+    color: $color;
+    padding-top: $padding;
+}
